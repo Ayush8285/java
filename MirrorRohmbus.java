@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class MirrorRohmbus {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the size of the pattern");
+        int size = s.nextInt();
+
+        for(int i = 1 ; i<=size;i++){
+            for(int k = size-1 ; k >= i;k--){
+                System.out.print(" ");
+            }
+            for(int j=1 ; j <= size;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        s.close();
+    }
+}
