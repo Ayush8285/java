@@ -23,5 +23,6 @@ public class PlusStar {
           }
           System.out.println();
         }
+        s.close();
     }
 }
