@@ -7,7 +7,7 @@ public class AnagramChecker {
         System.out.println("enter the second word");
         String second = s.nextLine().trim().toLowerCase();
         int count = 0;
-        int dec = 0;
+        
         if(first.length()==second.length()){
             for(int i =0;i<first.length();i++){
                 for(int j =0;j<second.length();j++){
@@ -15,8 +15,6 @@ public class AnagramChecker {
                     char b = second.charAt(j);
                     if(a==b){
                         count++;
-                    }else{
-                        dec--;
                     }
                 }
             }
@@ -27,7 +25,7 @@ public class AnagramChecker {
             }
         }else{
             System.out.println("The length of the string are different means character are different in them");
-            System.out.println(dec);
+         
         }
         s.close();
     }
